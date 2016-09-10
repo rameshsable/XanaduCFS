@@ -1,0 +1,911 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.headerWrap {
+  background: #fff;
+  height: 60px;
+  border-bottom: solid 1px #dddddd;
+  box-shadow: 4px 3px 6px #dddddd;
+}
+.headerWrap h1 {
+  margin: 10px 0;
+}
+.containerBg {
+  background: url("../images/contentBg.jpg") 0 0 repeat;
+  min-height: 515px;
+}
+
+.loginWrap {
+  width: 320px;
+  margin: 120px auto;
+  border: solid 1px #dddddd;
+  border-radius: 4px;
+  text-align: center;
+}
+.loginWrap h5 {
+  background: #092d3d;
+  padding: 15px 0;
+  border-bottom: solid 3px #cc0001;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+}
+.loginWrap .formWrap {
+  background: #ffffff;
+  padding:35px 15px 15px 15px;
+}
+
+.loginWrap .form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.loginWrap .form-group .forgotPassword {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  text-decoration: underline;
+}
+
+.loginWrap .fa-times {
+  color: #ffffff;
+  float: right;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.rememberMeWrap {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.rememberMeWrap label {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.loginWrap .btn-primary {
+  width: 180px;
+  margin: 0 auto;
+}
+
+/*inner navigations style */
+.navbar-default {
+  background: #092d3d;
+  min-height: 60px;
+  border-radius: 0;
+}
+.navbar>.container .navbar-brand, 
+.navbar>.container-fluid .navbar-brand {
+	margin-left: 0;
+	padding: 0;
+}
+.logoWrap {
+  padding: 10px 10px 0;
+  display: block;
+  background: #f2f2f2;
+}
+
+.navbar-collapse .navbar-nav {
+  margin-top:12px;
+}
+
+.navbar-collapse .navbar-nav li a {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-bottom: solid 3px transparent;
+}
+
+.navbar-collapse .navbar-nav li a:hover {
+	color: #9baaaf;
+	border-bottom: solid 3px #cc0001;
+}
+
+.nav .open>a {
+	border-color: #cc0001;
+}
+
+.navbar-nav .dropdown-menu {
+	min-width: 180px;
+	background: #092d3d;
+	padding: 0;
+}
+
+.dropdown-menu i {
+	margin-right: 5px;
+}
+
+.navbar-collapse .navbar-nav li .dropdown-menu a:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.navbar-fixed-bottom {
+	text-align: center;
+	background: #f2f2f2;
+	padding-top: 15px;
+	border-top: solid 1px #dddddd;
+}
+
+/* Admin pages style */
+
+.containerBg {
+	background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAATwAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAwICAgICAwICAwQCAgIEBAMDAwMEBQQEBAQEBQYFBgUFBgUGBggICAgIBgoKCwsKCgwMDAwMDAwMDAwMDAwMDAEDAwMFBQUKBgYKDgsJCw4QDg4ODhAQDAwMDAwQEAwMDAwMDBAMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgASACbAwERAAIRAQMRAf/EAG0AAQEBAQAAAAAAAAAAAAAAAAABAgkBAQAAAAAAAAAAAAAAAAAAAAAQAAADBQYFAgUEAwAAAAAAAAABAvCRElKjEVFh4SJiITFB0ZOBknEyomODQnKCAyMzcxEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6hwnLSzAITPkmkfcAhOWkAQ7aQBCctLMAJJy0swCHbSzZ4BCfKGlmAQ7S8R9wCHbSAIdtn4gCE5aWYBCctI+4BCctJm9QCE5aWYBCcpeI+4BCfVNLMAhOWkzegBCfVNLMAhOWlmAmi9L1gJovS9YC6Nr1t0awAODa9bdGsATTel6wF03l9YBo2vWbNeAhwXpesA0YPWApQbXrboAaNr1t0awBNF6frANN6XrAXRtetmxANO16wE0XpesBdF6bPisA0bXrZsADRtesBNF6XrAaixqAEVx1MgCKw+Cuf3Wb1ASLlx+H+TJngEWNTIAixqZAEWNVm9ACI76gCxbqmQCRbsP9mTPACVcqr8GYwCLGpkAtvD5qmQCRXny+4zegCxc+NQBLcamQCxXHUASK4+f3Gb1AWKz9VQAixqZALr3fQAa71H6oANV6noANd6noANe56AE17vU0ALrvVwxQTNcAmvdZ8UAFqt30ALr3PQYBrvU9ABavrE9ABq5lE9ABr3PQAa9z0M2ABrvU9ABr3ccUM2IBr3PQAat3oaAC1d6noASEpaWYCQlLSIBYSlpZs4BISlpZs4BYSlpEAkJS0i7gEJS/Cz+rNngEJSu/q7mAQlLSzAISlpAEJS0s2cAQlLSIBYSl5/aLuAkJS8vtZs8BYSlpAEJS0iASEpX/wBWYBCUvP7WbOAWEpT8RAEKZaRdwEsI+iXLALCuS5YC6dpei2bABOFycOC2bAAsK5LlgFhXJcsA03JcturWgFhH0I/RYBYVyXLAOBHySVmCybkAcOhJctmwALCuS5YBYVyXLANNyXLbq1oC8D6EfosBOFyXLAXhcTlgJpuS5bdGsAOFxOWAWFcn6wCIucReQwCIuii8hgERTl5DALUzl5DAIimLyGARFMXkMAiKcvIfYAiKYvIYBEUxeQwCIpiL8h9gCIpyP8hgESZi8hgBqKYvIYBamci/IfYAiLoorf8AofYBbSmLyGAkSZi8h9gC1M5H+Q+wCxFMXkMBIimLyGA0Rnu9yAC0zm9yAEtVu96DZrwCJRze9Bs14BaZTe5ABarnq96GbAAiPd7kEzXAFqjnL+aGbABbVbrf3IAS1RTe5DNiApKUc3HehmxAS1W4/wCSAC1XH5vcgAiPdw3IJmuAW1W73IZsAEtO2zVb+5AC2q3e5DNiAkR7uO5Bs14C2ner3oASI91/zoACSqWkQBCq6mkAgVLTLviAQquppALDuPxl3AIVcNNNPcAhVLTJugBCrlDTIAhO4/GQASVH+mmXcBYVS00t1ASxV1n40gEKpT8ZdwCFV1NPfAAhVLTLuzwCFV1MrACFUtMu7OAIVXU098QCFUp+NPcAsVcfiT3Af//Z") 0 0 repeat;
+	height: 100%;
+}
+
+.adminContentWrap {
+	background: #f2f2f2;
+	padding: 15px;
+	border: solid 1px #dddddd;
+	margin: 30px 0 100px;
+}
+.adminContentWrap h3 {
+	margin-top: 0;
+}
+.adminContentWrap .createNewMomBtn {
+	margin: 5px 10px 5px 60px
+}
+.adminContentWrap.createNewUserWrapper {
+	margin-bottom: 30px;
+}
+.adminContentWrap h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+}
+
+.searchWrapper {
+	position: relative;
+}
+.searchWrapper .fa-search {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+
+.searchWrapper input[type="text"] {
+	padding: 5px 10px 5px 30px;
+	width: 200px;
+}
+
+.searchWrapper input[type="text"]:focus {
+	outline: none
+}
+
+.companyInfoWrap {
+	padding: 10px 40px;
+	background: #ffffff;
+	border: solid 1px #dddddd;
+	margin-bottom: 10px;
+}
+
+.companyInfoWrap .companyLogo {
+	float: left;
+	margin-right: 20px;
+}
+
+.listCompanyWrap a {
+	color: 505050;
+	text-transform: uppercase;
+}
+
+/*company registration style*/
+.companyInfoSection {
+	background: #f2f2f2;
+	padding: 15px;
+	border: solid 1px #dddddd;
+	margin: 30px 0;
+}
+.feedComWrapper {
+	margin-bottom: 100px;
+}
+.companyInfoSection h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.companyInfoSection .formWrapper {
+	background: #ffffff;
+	border: solid 1px #dddddd;
+}
+
+.companyInfoSection .formWrapper label { 
+	width: 135px;
+	text-align: left;
+	font-size: 12px;
+}
+.companyInfoSection .form-group.uploadLogoWrap input[type="file"] {
+	padding: 27px 20px 20px 20px;
+	min-height: 78px;
+}
+
+.addressWrapper input {
+	margin-bottom: 10px;
+}
+
+.companyInfoSection .form-group {
+	border-bottom: solid 1px #dddddd;
+	margin: 0;
+	padding: 10px 0;
+}
+.form-horizontal .control-label {
+	text-align: left;
+	padding: 5px 10px;
+	font-weight: normal;
+}
+.companyInfoSection .form-group .form-control {
+	width: 100%;
+	border-bottom: none;
+	padding: 0 10px
+}
+.companyInfoSection .form-group input{
+	background: #f2f2f2;
+}
+.companyListingTable .table-striped {
+	margin: 20px 0 50px;
+}
+.DataTables_sort_wrapper {
+	float: left;
+	width: 100%;
+}
+.dataTables_filter {
+	margin-bottom: 30px;
+}
+.dataTables_length select {
+	border: solid 1px #dddddd;
+	padding: 5px;
+}
+.dataTables_filter input {
+	outline: none;
+	padding: 0 10px;
+}
+
+/*create new user */
+.newUserFormWrapper {
+	background: #ffffff;
+	border: solid 1px #dddddd;
+}
+
+.feedbackTypeWrap {
+	width: 580px;
+	margin: 0 auto;
+	background: #ffffff;
+}
+
+.feedbackTypeWrap .saveFeedback,
+.selectCompanyWrap {
+	border: solid 1px #dddddd;
+	padding: 15px;
+}
+
+.feedbackTypeWrap .saveFeedback label {
+	float: left;
+	margin: 8px 10px;
+}
+
+.feedbackTypeWrap .saveFeedback .feedbackTypeInput {
+	width: 50%;
+	background: #f2f2f2;
+	border: none;
+	float: left;
+	padding: 6px 10px;
+}
+
+.feedbackTypeWrap .saveFeedback .btn {
+	padding: 5px 10px;
+	float: left;
+}
+
+.feedbackTabs {
+	margin-bottom: 0;
+}
+.feedbackTabs li {
+	float: left;
+	margin-right: 10px;
+}
+.feedbackTabs li a {
+	background: #ffffff;
+	display: block;
+	padding: 15px;
+	border: solid 1px #dddddd;
+	border-bottom: none;
+	color: #999999;
+	font-size: 20px;
+	font-weight: 600;
+}
+.feedbackTabs li.active a,
+.feedbackTabs li a:hover {
+	text-decoration: none;
+}
+.feedbackTabs li.active a {
+	color: #222222;
+}
+
+.tabsContentWrapper {
+	background: #ffffff;
+	border: solid 1px #dddddd;
+	padding: 40px;
+}
+
+.dataTables_info,
+.dataTables_paginate {
+	margin-top: 10px;
+}
+.dataTables_paginate.paging_simple_numbers .paginate_button,
+.dataTables_paginate.paging_full_numbers .paginate_button,
+.ui-state-default  {
+	background-color: #ffffff;
+	border: solid 1px #dddddd;
+	border-radius: 0;
+	padding: 3px 10px;
+	color: #333333;
+	cursor: pointer;
+}
+.dataTables_paginate.paging_simple_numbers .paginate_button:hover,
+.paging_full_numbers a.paginate_button:hover,
+.dataTables_paginate.paging_full_numbers .paginate_button.current,
+.dataTables_paginate.paging_full_numbers .paginate_button:hover {
+	background: #c5161d;
+	color: #ffffff !important;
+	border: solid 1px #c5161d;
+	text-decoration: none;
+}
+.selectCompanyWrap select {
+	background: #f2f2f2;
+    width: 80%;
+    padding: 10px;
+    margin-left: 15px;
+    color: #222222;
+}
+.assignFeedbackCompanyList li {
+	float: left;
+	margin-right: 10px;
+	width: 22%;
+}
+.assignFeedbackCompanyList {
+	border: solid 1px #dddddd;
+	padding: 20px 0;
+	margin: 20px 0;	
+}
+.assignFeedbackCompanyList ul:first-child {
+	border-top: none;
+}
+.assignFeedbackCompanyList ul {
+	border-top: solid 1px #dddddd;
+	padding: 0 20px;
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+.assignFeedbackCompanyList li label {
+	font-weight: normal;
+	font-size: 13px;
+	width: 100%;
+}
+.assignFeedbackCompanyList li span {
+	display: block;
+	float: left;
+	width: 80%;
+}
+.assignFeedbackCompanyList li label input {
+	float: left;
+	margin-right: 10px;
+}
+/* User Permissions style */
+.userPermissionWrapper select {
+	padding: 10px;
+	border: solid 1px #dddddd;
+	width: 100%;
+	background: #f2f2f2;
+	font-size: 15px;
+	color: #222222;
+}
+.userPermissionInnerContent {
+	background: #ffffff;
+	padding: 20px;
+	width: 500px;
+	margin: 0 auto;
+}
+.userPermissionInnerContent .panel-default>.panel-heading {
+	background: #ffffff;
+}
+.userPermissionInnerContent .panel-default {
+	border: none;
+	box-shadow: none;
+}
+
+.userPermissionListing li {
+	width: 25%;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.userPermissionListing li input[type="checkbox"],
+.userPermissionListing li span,
+.userPermissionListing li label {
+	float: left;
+	margin-right: 10px;
+}
+
+.emailPermissionWrapper select {
+	padding: 10px;
+	border: solid 1px #dddddd;
+	width: 100%;
+	background: #f2f2f2;
+	font-size: 15px;
+	color: #222222;
+}
+
+.reportDocTabs ul {
+	margin: 0;
+}
+.reportDocTabs ul.pagination li {
+	border-bottom: none;
+}
+.reportDocTabs ul.pagination li a {
+	border-radius: 5px 5px 0 0;
+	padding: 6px 15px;
+}
+.reportDocTabs ul.pagination>.active>a,
+.reportDocTabs ul.pagination>li>a:hover {
+	background: #ffffff;
+	color: #000000;
+	border-color: #dddddd;
+}
+
+.feedbackTabs.reportDocTabs .tabsContentWrapper li a {
+	border: none;
+	padding: 0;
+}
+
+.feedbackTabs.reportDocTabs .tabsContentWrapper li a:hover {
+	color: #cc0000;
+	text-decoration: none;
+}
+
+.feedbackTabs.reportDocTabs .tabsContentWrapper {
+	padding: 0;
+}
+
+.feedbackTabs .reportsTabsWrapper li {
+	width: 100%;
+	margin: 0;
+	padding: 15px;
+}
+
+.reportListingWrap > li {
+	border-top: solid 1px #f2f2f2;
+	padding: 15px 15px 10px;
+	width: 100%;
+}
+.reportListingWrap > li .panel-heading a {
+	font-size: 12px;
+}
+.reportListingWrap > li:first-child {
+	border: none;
+}
+.reportsTabsWrapper .reportDate {
+	font-size: 16px;
+}
+
+.reportsTabsWrapper .reportDate i {
+	margin-right: 10px;
+}
+.folderTypeWrap .fa {
+	font-size: 30px;
+	color: #082d3d;
+}
+.reportDateFilesWrap {
+	width: 80%;
+	line-height: 30px;
+	position: relative;
+	padding-left: 10px;
+}
+.reportDateFilesWrap .reportDate {
+	font-size: 16px;
+}
+
+.reportFileDetails {
+	width: 100%;
+	float: left;
+}
+
+.reportFileDetails {
+	position: relative;
+}
+
+.reportFileDetails .reportHeading .panel-heading:before {
+	content: " ";
+	position: absolute;
+    left: -33px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #636768;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.documentContentWrap .panel-heading,
+.dropboxContentWrapper .panel-heading {
+	padding: 0;
+}
+
+.reportFileDetails:after {
+    content: " ";
+    position: absolute;
+    left: -28px;
+    top: -6px;
+    width: 1px;
+    height: 100%;
+    display: block;
+    background: #636768;
+}
+
+.feedbackTabs li .reportFileCount {
+	font-size: 12px;
+	font-weight: normal;
+}
+.feedbackTabs li .reportFileCount .fa {
+	color: #cc0000;
+	margin-left: 5px;
+}
+.folderTypeWrap {
+	cursor: pointer
+}
+.feedbackTabs li .reportFileDetails a {
+	border: none;
+    padding: 0;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 0 5px 0 0;
+}
+.feedbackTabs li .reportDateFilesWrap li {
+	margin-right: 0;
+	padding: 0;
+}
+.feedbackTabs li .reportFileDetails a .fa {
+	margin-left: 5px;
+	color: #cc0000;
+}
+.feedbackTabs li .reportFileDetails p {
+	border-bottom: solid 1px #f2f2f2;
+	line-height: normal;
+	padding-bottom: 5px;
+}
+.reportSearchWrap {
+	position: relative;
+}
+.reportSearchWrap input{
+	width: 100%;
+	padding-left: 30px;
+}
+.reportSearchWrap i {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.uploadNewReportForm {
+	background: #ffffff;
+}
+.uploadReportGroup {
+	padding: 0 15px 15px;
+    border-bottom: solid 1px #f5f5f5;
+}
+.uploadReportGroup input[type="text"] {
+	width: 68%;
+	float: left;
+	background: #f2f2f2;
+	border: none;
+}
+.uploadNewReportForm .form-group input[type="file"],
+.uploadReportFile label {
+	border-bottom: none;
+	padding: 15px;
+}
+
+.uploadNewReportForm textarea {
+	width: 100%;
+	background: #f2f2f2;
+	resize: none;
+	padding: 5px;
+	border: none;
+}
+
+.uploadNewReport{
+	background: #092d3d;
+	padding: 5px;
+	margin-top: 10px;
+}
+.uploadReportGroup label {
+	float: left;
+	margin-right: 5px;
+}
+
+.uploadNewReport label {
+    font-size: 14px;
+    color: #f5f5f5;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.uploadNewReport .btn {
+	float: right;
+}
+
+.uploadNewReportForm h4 {
+	font-weight: bold;
+	background: #092d3d;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 15px;
+}
+
+.notificationDropdown .fa.fa-bell {
+	font-size: 20px;
+	padding: 3px 5px
+}
+.notificationDropdown .notificationCount {
+	width: 25px;
+	height: 25px;
+	background: #c7161e;
+	color: #ffffff;
+	font-size: 13px;
+	text-align: center;
+	border-radius: 50%;
+    padding-top: 3px;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    font-weight: bold;
+}
+.notificationDropdown .totalNotification {
+	text-align: center;
+	font-size: 15px;
+	background: #092d3d;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+}
+.notificationDropdown .totalNotification p {
+	margin-bottom: 0;
+}
+.notificationDropdown.open .fa.fa-bell {
+	background: #ffffff;
+	color: #092d3d;
+}
+.navbar-nav .notificationDropdown ul.dropdown-menu {
+	background: #ffffff;
+	margin-top: 15px;
+	border-radius: 5px 5px 0 0;
+}
+
+.navbar-nav .notificationDropdown ul.dropdown-menu li {
+	border-bottom: solid 1px #dddddd;
+}
+
+.navbar-collapse .navbar-nav .notificationDropdown ul.dropdown-menu li a {
+	color: #092d3d
+}
+
+.navbar-collapse .navbar-nav .notificationDropdown ul.dropdown-menu li a:hover {
+	color: #ffffff;
+}
+
+.navbar-collapse .navbar-nav li.notificationDropdown a {
+	border-bottom: none;
+}
+
+.navbar-collapse .navbar-nav li.notificationDropdown a:hover {
+	background: #092d3d;
+	border-bottom: none;
+}
+
+.notificationDropdown .dropdown-menu:before {
+    content: " ";
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #2f2f2f;
+}
+
+.momFormWrapper {
+	background: #ffffff;
+	border: solid 1px #dddddd;
+}
+.momFormWrapper li {
+	padding: 10px;
+}
+.momFormWrapper .momSubjectWrap {
+	width: 80%;
+	float: left;
+}
+.momFormWrapper .momSubjectWrap input {
+	font-size: 15px;
+	background: #092d3d;
+	color: #ffffff;
+	border: none;
+}
+.momFormWrapper .momDateWrap {
+	float: right;
+	position: relative;
+}
+.momFormWrapper .momDateWrap input {
+	width: 150px
+}
+.momFormWrapper .momDateWrap i {
+	position: absolute;
+	right: 5px;
+	top: 3px;
+}
+.submitMomBtnWrap button {
+	width: 200px;
+	margin-top: 10px
+}
+.momFormWrapper .momDateWrap label {
+	color: #ffffff;
+	font-weight: normal;
+}
+.momFormWrapper .momDateWrap input {
+	padding: 0;
+}
+.momFormWrapper .subjectWrapper {
+	background: #092d3d;
+}
+.momFormWrapper .keyPointsWrap label,
+.momFormWrapper .attendeeWrap label {
+	float: left;
+	font-weight: normal;
+	color: #092d3d;
+	margin-right: 10px;
+	width: 7%;
+}
+.momFormWrapper .attendeeWrap input {
+	background: #f2f2f2;
+	width: 92%;
+	border: none;
+	font-size: 14px;
+	padding-left: 15px;
+}
+.momFormWrapper li {
+	border-bottom: solid 1px #dddddd;
+}
+.momFormWrapper .keyPointsWrap .keyPointsInputWrap {
+	width: 92%;
+	float: left;
+}
+
+.feedbackCommuListWrap {
+	background: #ffffff;
+	width: 67%;
+	float: left;
+}
+.feedbackCommuListWrap .table-responsive {
+	height: 430px;
+}
+.inputConversionWrap {
+	width: 30%;
+	float: right
+}
+.inputConversionWrap .form-group {
+	margin-bottom: 0;
+}
+.inputConversionWrap .panel-body{
+	padding-bottom: 0;
+}
+.feedbackCommuListWrap .aboutDocument{
+	color: #ffffff;
+	background: #092d3d;
+	padding: 10px;
+}
+.feedbackCommuListWrap .aboutDocument span {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.feedbackCommuListWrap .communicationListing {
+	padding: 20px;
+}
+
+.communicationListing li:first-child {
+	margin-top: 0;
+}
+.communicationListing li {
+	margin: 15px 0 0 0;
+}
+
+.communicationListing li .operatorMessageWrap {
+	background: #f2f2f2;
+	float: left;
+	width: 95%;
+}
+.operatorMessageWrap span {
+	margin-right: 20px;
+}
+
+.operatorNameDateWrap,
+.operatorNameDateWrap h5 {
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.messageWrap {
+	border-bottom: solid 1px #e4e4e4;
+	margin-bottom: 15px;
+}
+
+.messageWrap p {
+	line-height: 20px;
+}
+.communicationListing li .downloadFilesWrap li {
+	margin-top: 5px;
+}
+ .downloadFilesWrap li a {
+ 	color: #6b6b6b;
+ }
+  .downloadFilesWrap li .fa:hover, 
+  .downloadFilesWrap li a:hover {
+  	color: #cd0001;
+  }
+  .downloadAllFiles:hover {
+  	color: #000000;
+  }
+ .downloadAllFiles,
+ .downloadFilesWrap .fa {
+ 	color: #cd0001;
+ 	margin-left: 5px; 
+ }
+ 
+ .coreflexOperatorMsgWrap {
+ 	background: #cae5a0;
+ 	padding: 10px;
+ 	width: 95%;
+ 	float: right;
+ }
+ 
+ .coreflexOperatorMsgWrap .timeWrap {
+ 	margin-right: 10px;
+ }
+ 
+ .coreflexOperatorMsgWrap .messageWrap {
+ 	border-bottom: none;
+ 	margin-bottom: 0;
+ }
+ 
+ .feedcomPoWrap .table-responsive {
+ 	padding: 0 20px;
+ }
+ 
+ .feedcomPoWrap .panel-heading a {
+ 	font-size: 15px;
+ 	font-weight: bold;
+ }
+ .querycomChatForm input[type="text"] {
+ 	width: 100%;
+ 	background: #f2f2f2;
+ }
+ 
+ .querycomChatForm .uploadFileWrap input {
+ 	border-bottom: none;
+ }
+ 
+ .querycomChatForm .note-editor {
+ 	width: 100% !important;
+ }

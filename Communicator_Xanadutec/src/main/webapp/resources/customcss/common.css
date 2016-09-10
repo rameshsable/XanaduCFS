@@ -1,0 +1,239 @@
+/* input style */
+.form-control,
+input {
+  border: none;
+  border-bottom: solid 1px #dddddd;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 6px 0;
+}
+
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #cc0001;
+  box-shadow: none;
+}
+
+/* button style */
+.btn {
+  padding: 10px 15px;
+  border-radius: 0;
+}
+
+.btn-small {
+	padding: 4px 25px;
+}
+
+.btn-primary,
+.btn-primary:focus {
+  background: #c5161d;
+  color: #ffffff;
+  text-align: center;
+  border-color: #c5161d;
+  outline: none
+}
+
+.btn-primary:hover {
+  background: #d6272e;
+  border-color: #d6272e;
+}
+
+.btn-secondary {
+	background: #092d3d;
+	color: #ffffff;
+}
+.btn-secondary:hover {
+	background: #0d3d52;
+	color: #ffffff;
+}
+.link {
+  color: #092d3d;
+}
+
+.errorMessage {
+  color: #c5161d;
+  font-size: 12px;
+  text-align: left;
+}
+
+table a {
+	color: #8d8d8d;
+}
+
+table a:hover {
+	color: #4e4e4e;
+}
+
+/*data table style */
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled,
+table.dataTable thead th {
+	background: #092d3d 0 0 ;
+	color: #9cabae;
+	font-weight: normal;
+	font-size: 14px;
+	border-bottom: solid 1px #dddddd;
+    padding: 5px 10px;
+   	line-height: 26px;
+}
+table.dataTable thead th:hover {
+	color: #ffffff;
+}
+table.dataTable a {
+	font-size: 14px;
+}
+
+.companyListingTable .DataTables_sort_icon {
+	display: none;
+}
+
+table.dataTable thead .sorting:after {
+	display: none;
+}
+.table .fa-sort-amount-asc {
+	float: right;
+	padding: 5px;
+}
+.verticleFormWrapper label {
+	width: 135px;
+	text-align: left;
+	font-size: 12px;
+	float: left;
+	padding: 5px 10px 5px 0;
+	font-weight: normal;
+}
+
+.verticleFormWrapper .form-control,
+.verticleFormWrapper input[type="text"] {
+	background: #f2f2f2;
+	width: 100%;
+}
+.verticleFormWrapper {
+	padding: 15px;
+}
+.verticleFormWrapper select {
+	width: 100%;
+	padding: 5px;
+}
+table.dataTable thead .sorting_asc:after {
+	display: none;
+}
+
+.dataTables_wrapper {
+	padding-bottom: 100px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+	background: none;
+	color: #ffffff;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	border-color:#c7161e;
+}
+.redMessages {
+	color: #cc0000;
+}
+
+.innerBreadcrumb {
+	border: solid 1px #e4e4e4;
+	margin-bottom: 10px
+}
+
+.innerBreadcrumb ul {
+	margin-bottom: 0;
+}
+.innerBreadcrumb li {
+	float: left;
+	background: #fafafa;
+	line-height: 30px;
+	padding: 0 10px;
+}
+.innerBreadcrumb li a:hover,
+.innerBreadcrumb li a {
+	color: #a5a5a5;
+	text-decoration: none;	
+}
+.innerBreadcrumb li .fa{
+	font-size: 20px;
+    display: inline-block;
+    margin-top: 5px;
+    float: right;
+    margin-left: 10px;
+}
+
+.innerBreadcrumb li.active {
+	background: #ffffff;
+	color: #343434;
+}
+
+.momPopupWrap {
+	background: #ffffff;
+	padding: 20px;
+}
+.momPopupWrap .popupHeader {
+	border-bottom: solid 3px #cc0000;
+}
+.momPopupWrap .popupHeader .logo {
+	width: 25%;
+}
+.momPopupWrap .popupHeader .popupClose{
+	background: #f2f2f2;
+    padding: 5px 8px;
+    color: #cd0001;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    outline: none;
+    right: 0;
+}
+.momPopupWrap .popupHeader h2 {
+	 color: #082c3c;
+	 font-size: 25px;
+	 font-weight: 600;
+	 margin: 0 0 5px 0
+}
+.momPopupWrap .popupHeader .meetingNoteDate {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	color: #082c3c;
+}
+.momPopupWrap .popupHeader .meetingCreatedBy {
+	display: block;
+	color: #afafaf;
+	margin: 5px 0 10px;	
+}
+.meetingContent h4 {
+	font-weight: bold;
+	margin-top: 20px;
+}
+.meetingContent .attendeesNames span {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 16px;
+	color: #afafaf;
+}
+
+.momKeyPointsWrap {
+	border-top: solid 1px #e4e4e4;
+	margin-top: 20px;
+}
+.momKeyPointsWrap li {
+	margin-bottom: 15px;
+}
+.operatorMessageWrap {
+	padding: 10px;
+}
+.operatorMessageWrap h5 {
+	margin-top: 0;
+}
